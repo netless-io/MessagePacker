@@ -86,22 +86,18 @@ pod 'MessagePacker'
 Add MessagePacker as a dependency:
 
 ```swift
-import PackageDescription
-
-let package = Package(
-    name: "YourApp",
-    dependencies: [
-        .Package(url: "https://github.com/hirotakan/MessagePacker.git", majorVersion: 0),
-    ]
-)
+// In your Package.swift file
+dependencies: [
+    .package(url: "https://github.com/netless-io/MessagePacker.git", from: "0.4.7")
+]
 ```
 
 ## Requirements
- - Swift 5.0 or later
- - iOS 8.0 or later
- - macOS 10.10 or later
- - tvOS 9.0 or later
- - watchOS 2.0 or later
+ - Swift 5.9 or later
+ - iOS 12.0 or later
+ - macOS 13.0 or later
+ - tvOS 16.0 or later
+ - watchOS 9.0 or later
 
 
 ## License
