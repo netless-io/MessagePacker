@@ -7,10 +7,10 @@
 #
 
 Pod::Spec.new do |s|
-  s.name         = "MessagePacker"
-  s.version      = "0.4.7"
+  s.name         = "NTLMessagePacker"
+  s.version      = "0.4.8"
   s.summary      = "MessagePack serializer implementation for Swift."
-  s.homepage     = "https://github.com/hirotakan/MessagePacker"
+  s.homepage     = "https://github.com/netless-io/MessagePacker"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "hirotakan"
   s.ios.deployment_target = "11.0"
@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "16.0"
 
   s.swift_version  = "5.0"
-  s.source       = { :git => "https://github.com/hirotakan/MessagePacker.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/netless-io/MessagePacker.git", :tag => "#{s.version}" }
   s.source_files  = "Sources/**/*.swift"
 end
