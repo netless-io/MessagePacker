@@ -14,9 +14,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "hirotakan"
   s.ios.deployment_target = "11.0"
-  s.osx.deployment_target = "13.0"
-  s.watchos.deployment_target = "9.0"
-  s.tvos.deployment_target = "16.0"
 
   s.swift_version  = "5.0"
   s.source       = { :git => "https://github.com/netless-io/MessagePacker.git", :tag => "#{s.version}" }
