@@ -2,16 +2,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "MessagePacker",
+    name: "NTLMessagePacker",
     platforms: [
         .macOS(.v13), .iOS(.v12), .tvOS(.v16), .watchOS(.v9)
     ],
     products: [
-        .library(name: "MessagePacker", targets: ["MessagePacker"]),
+        .library(name: "NTLMessagePacker", targets: ["NTLMessagePacker"]),
     ],
     targets: [
-        .target(name: "MessagePacker", dependencies: [], path: "Sources"),
-        .testTarget(name: "MessagePackerTests", dependencies: ["MessagePacker"]),
+        .target(name: "NTLMessagePacker", dependencies: [], path: "Sources"),
+        .testTarget(name: "NTLMessagePackerTests", dependencies: ["NTLMessagePacker"]),
     ],
     swiftLanguageVersions: [.v5]
 )

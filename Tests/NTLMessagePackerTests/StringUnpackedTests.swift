@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MessagePacker
+@testable import NTLMessagePacker
 
 class StringUnpackedTests: XCTestCase {
     let decoder = MessagePackDecoder()

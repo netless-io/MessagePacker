@@ -1,5 +1,5 @@
 //
-//  BoolPackedTests.swift
+//  FloatPackedTests.swift
 //  MessagePackerTests
 //
 //  Created by hirotaka on 2018/11/12.
@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import MessagePacker
+@testable import NTLMessagePacker
 
-class BoolPackedTests: XCTestCase {
+class FloatPackedTests: XCTestCase {
     let encoder = MessagePackEncoder()
 
     override func setUp() {
@@ -20,15 +20,9 @@ class BoolPackedTests: XCTestCase {
         super.tearDown()
     }
 
-    func testFalse() {
-        let input = false
-        let output = Data([194])
-        XCTAssertEqual(try encoder.encode(input), output)
-    }
-
-    func testTrue() {
-        let input = true
-        let output = Data([195])
+    func testFloat() {
+        let input: Float = 3.14
+        let output = Data([202, 64, 72, 245, 195])
         XCTAssertEqual(try encoder.encode(input), output)
     }
 }

@@ -1,8 +1,8 @@
 import XCTest
 
-import MessagePackerTests
+import NTLMessagePackerTests
 
 var tests = [XCTestCaseEntry]()
-tests += MessagePackerTests.__allTests()
+tests += NTLMessagePackerTests.__allTests()
 
 XCTMain(tests)

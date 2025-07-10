@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MessagePacker
+@testable import NTLMessagePacker
 
 class TimestampPackedTests: XCTestCase {
     let encoder = MessagePackEncoder()

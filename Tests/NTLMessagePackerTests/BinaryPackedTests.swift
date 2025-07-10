@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MessagePacker
+@testable import NTLMessagePacker
 
 class BinaryPackedTests: XCTestCase {
     let encoder = MessagePackEncoder()

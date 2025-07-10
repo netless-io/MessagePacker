@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MessagePacker
+@testable import NTLMessagePacker
 
 class ExtensionPackedTests: XCTestCase {
     let encoder = MessagePackEncoder()

@@ -1,5 +1,5 @@
 //
-//  DoublePackedTests.swift
+//  BoolPackedTests.swift
 //  MessagePackerTests
 //
 //  Created by hirotaka on 2018/11/12.
@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import MessagePacker
+@testable import NTLMessagePacker
 
-class DoublePackedTests: XCTestCase {
+class BoolPackedTests: XCTestCase {
     let encoder = MessagePackEncoder()
 
     override func setUp() {
@@ -20,9 +20,15 @@ class DoublePackedTests: XCTestCase {
         super.tearDown()
     }
 
-    func testDouble() {
-        let input = 3.14
-        let output = Data([203, 64, 9, 30, 184, 81, 235, 133, 31])
+    func testFalse() {
+        let input = false
+        let output = Data([194])
+        XCTAssertEqual(try encoder.encode(input), output)
+    }
+
+    func testTrue() {
+        let input = true
+        let output = Data([195])
         XCTAssertEqual(try encoder.encode(input), output)
     }
 }

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MessagePacker
+@testable import NTLMessagePacker
 
 class MapUnpackedTests: XCTestCase {
     let decoder = MessagePackDecoder()

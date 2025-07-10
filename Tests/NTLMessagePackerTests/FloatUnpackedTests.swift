@@ -1,5 +1,5 @@
 //
-//  DoubleUnpackedTests.swift
+//  FloatUnpackedTests.swift
 //  MessagePackerTests
 //
 //  Created by hirotaka on 2018/11/12.
@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import MessagePacker
+@testable import NTLMessagePacker
 
-class DoubleUnpackedTests: XCTestCase {
+class FloatUnpackedTests: XCTestCase {
     let decoder = MessagePackDecoder()
 
     override func setUp() {
@@ -20,9 +20,9 @@ class DoubleUnpackedTests: XCTestCase {
         super.tearDown()
     }
 
-    func testDouble() {
-        let input = Data([203, 64, 9, 30, 184, 81, 235, 133, 31])
-        let output = 3.14
-        XCTAssertEqual(try decoder.decode(Double.self, from: input), output)
+    func testFloat() {
+        let input = Data([202, 64, 72, 245, 195])
+        let output: Float = 3.14
+        XCTAssertEqual(try decoder.decode(Float.self, from: input), output)
     }
 }
